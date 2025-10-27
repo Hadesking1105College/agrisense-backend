@@ -1,0 +1,31 @@
+name: Hourly Data Update
+
+on:
+  schedule:
+    # Runs every hour at minute 0
+    - cron: '0 * * * *'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm install node-fetch
+      
+    - name: Fetch and update satellite data
+      env:
+        OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+        SENTINEL_API_KEY: ${{ secrets.SENTINEL_API_KEY }}
+        NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+        BASE44_APP_URL: ${{ secrets.BASE44_APP_URL }}
+      run: node fetch-data.js
