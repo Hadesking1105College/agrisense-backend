@@ -1,0 +1,9 @@
+{
+  "name": "agrisense-backend",
+  "version": "1.0.0",
+  "description": "Background service for AgriSense",
+  "main": "fetch-data.js",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
