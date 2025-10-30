@@ -1,13 +1,16 @@
-name: Hourly Data Update
+name: Hourly Data Collection
 
 on:
   schedule:
-    - cron: '0 * * * *'
-  workflow_dispatch:
+    - cron: '0 * * * *'  # Runs every hour
+  workflow_dispatch:  # Manual trigger
 
 jobs:
-  update-data:
+  collect-data:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # Required to commit data
     
     steps:
     - name: Checkout code
@@ -21,7 +24,15 @@ jobs:
     - name: Install dependencies
       run: npm install node-fetch
       
-    - name: Fetch satellite data
+    - name: Collect satellite data
       env:
-        OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
-      run: node fetch-data.js
+        OPENWEATHER_API_KEY: bdbb729e419d72e9fc729033666e64ab
+      run: node collect-data.js
+      
+    - name: Commit and push data
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "GitHub Actions"
+        git add data/readings.json
+        git commit -m "Auto: Hourly data update $(date)" || echo "No changes"
+        git push
