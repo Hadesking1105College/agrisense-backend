@@ -1678,5 +1678,35 @@
     "ndvi_value": 0.712,
     "risk_level": "moderate",
     "data_source": "github_actions"
+  },
+  {
+    "timestamp": "2025-11-02T09:29:30.203Z",
+    "reading_date": "2025-11-02",
+    "location_name": "North Field",
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "salinity_level": 2.2,
+    "soil_moisture": 34.6,
+    "rainfall_mm": 0,
+    "temperature_celsius": 30.1,
+    "humidity_percent": 32,
+    "ndvi_value": 0.638,
+    "risk_level": "moderate",
+    "data_source": "github_actions"
+  },
+  {
+    "timestamp": "2025-11-02T09:29:30.306Z",
+    "reading_date": "2025-11-02",
+    "location_name": "South Field",
+    "latitude": 13.0827,
+    "longitude": 80.2707,
+    "salinity_level": 2.26,
+    "soil_moisture": 39.1,
+    "rainfall_mm": 0,
+    "temperature_celsius": 33.4,
+    "humidity_percent": 62,
+    "ndvi_value": 0.695,
+    "risk_level": "moderate",
+    "data_source": "github_actions"
   }
 ]
