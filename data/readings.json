@@ -1,35 +1,5 @@
 [
   {
-    "timestamp": "2026-01-25T07:20:44.135Z",
-    "reading_date": "2026-01-25",
-    "location_name": "North Field",
-    "latitude": 28.6139,
-    "longitude": 77.209,
-    "salinity_level": 2.12,
-    "soil_moisture": 35.2,
-    "rainfall_mm": 0,
-    "temperature_celsius": 15.1,
-    "humidity_percent": 47,
-    "ndvi_value": 0.712,
-    "risk_level": "moderate",
-    "data_source": "github_actions"
-  },
-  {
-    "timestamp": "2026-01-25T07:20:44.230Z",
-    "reading_date": "2026-01-25",
-    "location_name": "South Field",
-    "latitude": 13.0827,
-    "longitude": 80.2707,
-    "salinity_level": 1.86,
-    "soil_moisture": 40.2,
-    "rainfall_mm": 0,
-    "temperature_celsius": 26.2,
-    "humidity_percent": 76,
-    "ndvi_value": 0.837,
-    "risk_level": "low",
-    "data_source": "github_actions"
-  },
-  {
     "timestamp": "2026-01-25T08:27:01.012Z",
     "reading_date": "2026-01-25",
     "location_name": "North Field",
@@ -7497,6 +7467,36 @@
     "humidity_percent": 72,
     "ndvi_value": 0.778,
     "risk_level": "moderate",
+    "data_source": "github_actions"
+  },
+  {
+    "timestamp": "2026-02-06T15:39:08.860Z",
+    "reading_date": "2026-02-06",
+    "location_name": "North Field",
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "salinity_level": 1.87,
+    "soil_moisture": 38.4,
+    "rainfall_mm": 0,
+    "temperature_celsius": 16.1,
+    "humidity_percent": 77,
+    "ndvi_value": 0.728,
+    "risk_level": "low",
+    "data_source": "github_actions"
+  },
+  {
+    "timestamp": "2026-02-06T15:39:08.998Z",
+    "reading_date": "2026-02-06",
+    "location_name": "South Field",
+    "latitude": 13.0827,
+    "longitude": 80.2707,
+    "salinity_level": 1.85,
+    "soil_moisture": 38.1,
+    "rainfall_mm": 0,
+    "temperature_celsius": 25.5,
+    "humidity_percent": 73,
+    "ndvi_value": 0.822,
+    "risk_level": "low",
     "data_source": "github_actions"
   }
 ]
